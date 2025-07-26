@@ -1,7 +1,5 @@
 # CSProblemsPortal-WebPage
 
-# CSProblemsPortal-WebPage
-
 **CSProblemsPortal-WebPage** is an educational web page I created to assist in teaching introductory computer science concepts to my students. It serves as a visual and interactive learning aid, designed to make abstract ideas more approachable and engaging during lectures or self-paced study.
 
 🌐 **Live Preview**: [Click here to open the site](https://cs-problems-portal-web-page-v26i-git-main-vladluca70s-projects.vercel.app)
