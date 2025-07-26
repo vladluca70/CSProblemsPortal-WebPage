@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructiunea WHILE</title>
+        <link rel="stylesheet" href="../static/css/pages.css">
+    <script src="../static/js/pages.js" defer></script>  
+    <link rel="icon" href="../static/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <div class="problema" data-eng="Display all numbers from 1 to 10 using a while loop.">
+1.Afișează toate numerele de la 1 la 10 folosind o buclă while.
+</div>
+
+<div class="problema" data-eng="Use a while loop to display all even numbers from 1 to 20.">
+    2.Folosește while pentru a afișa toate numerele pare de la 1 la 20.
+</div>
+
+<div class="problema" data-eng="Read a number n and calculate the sum of all numbers from 1 to n.">
+    3.Citește un număr n și calculează suma tuturor numerelor de la 1 la n.
+</div>
+
+<div class="problema" data-eng="Read a number n and calculate its factorial (n!).">
+    4.Citește un număr n și calculează factorialul său (n!).
+</div>
+
+<div class="problema" data-eng="Read a number n and display numbers from n down to 1.">
+    5.Citește un număr n și afișează numerele de la n până la 1.
+</div>
+
+<div class="problema" data-eng="Read a number and display each digit one by one (from right to left).">
+    6.Citește un număr și afișează fiecare cifră a lui pe rând (de la dreapta la stânga).
+</div>
+
+<div class="problema" data-eng="Read a number and determine how many digits it has.">
+    7.Citește un număr și determină câte cifre are.
+</div>
+
+<div class="problema" data-eng="Read a number and calculate the sum of its digits.">
+    8.Citește un număr și calculează suma cifrelor sale.
+</div>
+
+<div class="problema" data-eng="Read a number and display its reverse (e.g., for 123 display 321).">
+    9.Citește un număr și afișează inversul său. (ex: pentru 123 afișează 321 )
+</div>
+
+<div class="problema" data-eng="Read a number n and determine its smallest divisor greater than 1 (using while).">
+    10.Citește un număr n și determină cel mai mic divizor al lui mai mare decât 1 (folosind while).
+</div>
+
+<div class="problema" data-eng="Read a number n and check if it is a prime number (only 2 divisors: 1 and n).">
+    11.Citește un număr n și verifică dacă este număr prim. (dacă dacă are exact 2 divizori: 1 și n )
+</div>
+
+<div class="problema" data-eng="Read a number and check if it is a palindrome (e.g., 121, 12321). Reverse the number using while.">
+    12.Citește un număr și verifică dacă este palindrom (ex: 121, 12321). Inversează numărul în while.
+</div>
+
+<div class="problema" data-eng="Read a number and check if all its digits are identical (e.g., 444, 7777).">
+    13.Citește un număr și verifică dacă toate cifrele sunt identice (ex: 444, 7777).
+</div>
+
+<div class="problema" data-eng="Read a number and check if its digits are in strictly increasing order from left to right (e.g., 1234).">
+    14.Citește un număr și verifică dacă cifrele sale sunt în ordine strict crescătoare de la stânga la dreapta (ex: 1234).
+</div>
+
+<div class="problema" data-eng="Read a number and check if it is divisible by the sum of its digits (e.g., 18 → 1+8=9, 18%9==0).">
+    15.Citește un număr și verifică dacă este divizibil cu suma cifrelor sale (ex: 18 → 1+8=9, 18%9==0).
+</div>
+
+<div class="problema" data-eng="Read a number n and display all Fibonacci numbers less than or equal to n.">
+    16.Citește un număr n și afișează toți termenii din șirul lui Fibonacci mai mici sau egali cu n.
+</div>
+
+<div class="problema" data-eng="Read two numbers a and b and calculate their greatest common divisor using Euclid's algorithm (while).">
+    17.Citește două numere a și b și calculează cel mai mare divizor comun folosind algoritmul lui Euclid (while).
+</div>
+
+<div class="problema" data-eng="Read a number and check if all its digits are prime numbers (2, 3, 5, 7).">
+    18.Citește un număr și verifică dacă toate cifrele sunt numere prime (2, 3, 5, 7).
+</div>
+
+<div class="problema" data-eng="Read a number and check if it has the same number of even and odd digits.">
+    19.Citește un număr și verifică dacă are același număr de cifre pare și impare.
+</div>
+
+
+<div id="algorithm1" class="algorithms">       
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter a number: ";
+    cin >> n;
+
+    cout << "The digits of the number are: ";
+    while (n > 0) {
+        int digit = n % 10;  // extract the last digit
+        cout << digit << " ";
+        n = n / 10;          // remove the last digit
+    }
+    cout << endl;
+
+    return 0;
+}
+</div>
+
+<div id="algorithm2" class="algorithms">
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    cout << "Enter two positive integers: ";
+    cin >> a >> b;
+
+    while (a != b) {
+        if (a > b)
+            a = a - b;
+        else
+            b = b - a;
+    }
+
+    cout << "GCD is: " << a << endl;
+
+    return 0;
+}
+
+    </div>
+
+    <button id="back-home" onclick="window.location.href='../../../index.html'">Go back Home</button>
+
+</body>
+</html>
